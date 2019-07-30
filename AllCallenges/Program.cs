@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AllCallenges
+namespace AllChallenges
 {
     class Program
     {
