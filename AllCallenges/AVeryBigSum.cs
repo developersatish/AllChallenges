@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace AllCallenges
+namespace AllChallenges
 {
    public class AVeryBigSum
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AllCallenges
+namespace AllChallenges
 {
     class WINorLOSE
     {
@@ -19,7 +19,7 @@ namespace AllCallenges
 
             for (int i = 0; i < testCases; i++)
             {
-                Console.WriteLine("No of Villans and Players");
+                Console.WriteLine("No of Villains and Players");
                 int noVillanPlayers = Convert.ToInt32(Console.ReadLine());
                 inputNVnP[i] = noVillanPlayers;
 

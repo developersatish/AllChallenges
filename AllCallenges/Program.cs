@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AllCallenges
+namespace AllChallenges
 {
     class Program
     {
@@ -10,9 +10,9 @@ namespace AllCallenges
             //AVeryBigSum.Entry();
             // DiagonalDifference.Entry2();
             // WINorLOSE.Entry();
-
-            DeepAndShallowCopy.Entry();
-            Console.WriteLine("Hello World!");
+            //Palindrom.Entry();
+            ReverseWordOrder.Sentences();
+            Console.WriteLine("\t\t End!");
         }
     }
 }
