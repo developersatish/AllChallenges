@@ -9,8 +9,10 @@ namespace AllChallenges
             //CompareTheTriplets.Entry();
             //AVeryBigSum.Entry();
             // DiagonalDifference.Entry2();
-            WINorLOSE.Entry();
-            Console.WriteLine("Hello World!");
+            // WINorLOSE.Entry();
+            //Palindrom.Entry();
+            ReverseWordOrder.Sentences();
+            Console.WriteLine("\t\t End!");
         }
     }
 }
