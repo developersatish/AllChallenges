@@ -9,7 +9,9 @@ namespace AllCallenges
             //CompareTheTriplets.Entry();
             //AVeryBigSum.Entry();
             // DiagonalDifference.Entry2();
-            WINorLOSE.Entry();
+            // WINorLOSE.Entry();
+
+            DeepAndShallowCopy.Entry();
             Console.WriteLine("Hello World!");
         }
     }
