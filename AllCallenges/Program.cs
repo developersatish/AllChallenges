@@ -15,7 +15,11 @@ namespace AllChallenges
             // CodingQuestionAns.ReverseString("hello");
             // PlusMinus.Entry();
             // Staircase.Entry();
-            MinMaxSum.Entry();
+            // MinMaxSum.Entry();
+            // BirthdayCakeCandles.Entry();
+            // TimeConversion.Entry();
+            // GradingStudents.Entry();
+            SockMerchant.Entry();
             Console.WriteLine("-----------------------End! ------------------");
         }
     }
