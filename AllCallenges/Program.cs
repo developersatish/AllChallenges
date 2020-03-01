@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AllChallenges._30DaysCodes;
+using System;
 
 namespace AllChallenges
 {
@@ -19,7 +20,9 @@ namespace AllChallenges
             // BirthdayCakeCandles.Entry();
             // TimeConversion.Entry();
             // GradingStudents.Entry();
-            SockMerchant.Entry();
+            // SockMerchant.Entry();
+            // DataType.Entry();
+            Operators.Entry();
             Console.WriteLine("-----------------------End! ------------------");
         }
     }
