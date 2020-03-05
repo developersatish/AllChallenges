@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AllChallenges._30DaysCodes
 {
-   public class Operators
+    public class Operators
     {
         public static void Entry()
         {
@@ -21,11 +21,8 @@ namespace AllChallenges._30DaysCodes
         // Complete the solve function below.
         static void solve(double meal_cost, int tip_percent, int tax_percent)
         {
-
-            int result = 0;
-
-            decimal tip =decimal.Parse(meal_cost.ToString("N1")) * Convert.ToDecimal(tip_percent / 100);
-            decimal tax = decimal.Parse(meal_cost.ToString("N1")) * Convert.ToDecimal(tax_percent / 100); 
+            decimal tip = decimal.Parse(meal_cost.ToString("N1")) * Convert.ToDecimal(tip_percent / 100);
+            decimal tax = decimal.Parse(meal_cost.ToString("N1")) * Convert.ToDecimal(tax_percent / 100);
 
             Console.WriteLine($"${meal_cost} ${tip} ${tax}");
         }

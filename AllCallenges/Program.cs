@@ -7,6 +7,7 @@ namespace AllChallenges
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("-----------------------Start > > > ------------------");
             // CompareTheTriplets.Entry();
             // AVeryBigSum.Entry();
             // DiagonalDifference.Entry2();
@@ -22,7 +23,10 @@ namespace AllChallenges
             // GradingStudents.Entry();
             // SockMerchant.Entry();
             // DataType.Entry();
-            Operators.Entry();
+            // Operators.Entry();
+            // ClassVsInstance.Entry();
+            // LetReview.Entry();
+            Arrays.Entry();
             Console.WriteLine("-----------------------End! ------------------");
         }
     }
