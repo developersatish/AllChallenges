@@ -21,8 +21,15 @@ namespace AllChallenges._30DaysCodes
         // Complete the solve function below.
         static void solve(double meal_cost, int tip_percent, int tax_percent)
         {
-            decimal tip = decimal.Parse(meal_cost.ToString("N1")) * Convert.ToDecimal(tip_percent / 100);
-            decimal tax = decimal.Parse(meal_cost.ToString("N1")) * Convert.ToDecimal(tax_percent / 100);
+            decimal meal = (decimal)meal_cost;
+
+            decimal tipPer = (decimal)tip_percent / 100;
+            decimal tip = meal * tipPer;
+
+            decimal taxPer = (decimal)tax_percent / 100;
+            decimal tax = meal * taxPer;
+
+            var total = meal + tip + tax;
 
             Console.WriteLine(Math.Round(total));
         }

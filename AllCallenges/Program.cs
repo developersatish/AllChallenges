@@ -5,7 +5,7 @@ namespace AllChallenges
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Entry()
         {
             Console.WriteLine("-----------------------Start > > > ------------------");
             // CompareTheTriplets.Entry();
@@ -26,7 +26,21 @@ namespace AllChallenges
             // Operators.Entry();
             // ClassVsInstance.Entry();
             // LetReview.Entry();
-            Arrays.Entry();
+            // Arrays.Entry();
+            // DictionariesAndMaps.Entry();
+            // Recursion3.Entry();
+            BinaryNumbers.Entry();
+        }
+        static void Main(string[] args)
+        {
+
+            bool again = true;
+            do
+            {
+                Entry();
+                Console.WriteLine("Try again (y/n) !");
+                again = Console.ReadLine() == "y";
+            } while (again);
             Console.WriteLine("-----------------------End! ------------------");
         }
     }
