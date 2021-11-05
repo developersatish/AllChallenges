@@ -29,7 +29,10 @@ namespace AllChallenges
             // Arrays.Entry();
             // DictionariesAndMaps.Entry();
             // Recursion3.Entry();
-            BinaryNumbers.Entry();
+            // BinaryNumbers.Entry();
+            //Arrays2D.Entry();
+
+            ArraySumToK.Entry();
         }
         static void Main(string[] args)
         {
