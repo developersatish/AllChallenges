@@ -29,7 +29,16 @@ namespace AllChallenges
             // Arrays.Entry();
             // DictionariesAndMaps.Entry();
             // Recursion3.Entry();
-            BinaryNumbers.Entry();
+            // BinaryNumbers.Entry();
+            // _2DArray.Entry();
+            // InheritanceDay12.Entry();
+
+            // AbstractClassesDay13.Entry();
+            // ScopeDay14.Entry();
+
+            // QueuesAndStacksDay18.Entry();
+
+            Day22BinarySearchTrees.Entry();
         }
         static void Main(string[] args)
         {
