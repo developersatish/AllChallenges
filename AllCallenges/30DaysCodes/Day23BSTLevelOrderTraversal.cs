@@ -5,8 +5,9 @@ using System.Text;
 namespace AllChallenges._30DaysCodes
 {
 
-    //https://www.hackerrank.com/challenges/30-binary-search-trees/tutorial
-    public class Day22BinarySearchTrees
+    //https://www.hackerrank.com/challenges/30-binary-trees/tutorial
+
+    public class Day23BSTLevelOrderTraversal
     {
         class Node
         {
@@ -19,24 +20,18 @@ namespace AllChallenges._30DaysCodes
             }
         }
 
-        static int getHeight(Node root)
+        static void levelOrder(Node root)
         {
-            //Write your code here
-            if (root == null)
-            {
-                return -1;
-            }
+            var queue = new Queue<Node>();
+            queue.Enqueue(root);
 
-            int lh = getHeight(root.left);
-            int rh = getHeight(root.right);
+            while (queue.Count != 0)
+            {
+                Node curr = queue.Dequeue();
+                Console.Write(curr.data + " ");
 
-            if (lh > rh)
-            {
-                return lh + 1;
-            }
-            else
-            {
-                return rh + 1;
+                if (curr.left != null) queue.Enqueue(curr.left);
+                if (curr.right != null) queue.Enqueue(curr.right);
             }
         }
 
@@ -71,8 +66,7 @@ namespace AllChallenges._30DaysCodes
                 int data = Int32.Parse(Console.ReadLine());
                 root = insert(root, data);
             }
-            int height = getHeight(root);
-            Console.WriteLine(height);
+            levelOrder(root);
         }
 	}
 }

@@ -38,7 +38,10 @@ namespace AllChallenges
 
             // QueuesAndStacksDay18.Entry();
 
-            Day22BinarySearchTrees.Entry();
+            // Day22BinarySearchTrees.Entry();
+            //  Day23BSTLevelOrderTraversal.Entry();
+
+            Day24MoreLinkedLists.Entry();
         }
         static void Main(string[] args)
         {
