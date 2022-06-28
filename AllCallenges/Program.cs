@@ -1,4 +1,5 @@
 ﻿using AllChallenges._30DaysCodes;
+using AllChallenges.HackerEarth;
 using System;
 
 namespace AllChallenges
@@ -41,7 +42,10 @@ namespace AllChallenges
             // Day22BinarySearchTrees.Entry();
             //  Day23BSTLevelOrderTraversal.Entry();
 
-            Day24MoreLinkedLists.Entry();
+            //Day24MoreLinkedLists.Entry();
+
+            // MaximumBorders.Go();
+            Divisibility.Go();
         }
         static void Main(string[] args)
         {
