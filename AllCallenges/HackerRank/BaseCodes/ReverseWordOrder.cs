@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
     public class ReverseWordOrder
     {
@@ -21,7 +21,7 @@ namespace AllChallenges
                 list.Add(item);
             }
             list.Reverse();
-            result = String.Join(" ", list.ToArray());
+            result = string.Join(" ", list.ToArray());
 
             Console.WriteLine(result);
         }

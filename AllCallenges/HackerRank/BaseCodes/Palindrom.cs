@@ -1,7 +1,7 @@
 using System;
 
 //Palindrom means if the word/sentence/pharase/numbers are similar in backword read.
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
     public class Palindrom
     {

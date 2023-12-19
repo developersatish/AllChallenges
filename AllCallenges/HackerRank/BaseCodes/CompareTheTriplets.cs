@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
-   public class CompareTheTriplets
+    public class CompareTheTriplets
     {
         static List<int> compareTriplets(List<int> a, List<int> b)
         {
@@ -34,7 +34,7 @@ namespace AllChallenges
         }
         public static void Entry()
         {
-            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+            TextWriter textWriter = new StreamWriter(Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
             List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
 
@@ -42,12 +42,12 @@ namespace AllChallenges
 
             List<int> result = compareTriplets(a, b);
 
-            textWriter.WriteLine(String.Join(" ", result));
+            textWriter.WriteLine(string.Join(" ", result));
 
             textWriter.Flush();
             textWriter.Close();
         }
     }
 
-    
+
 }

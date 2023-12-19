@@ -4,7 +4,7 @@ using System.Text;
 using System.Linq;
 using System.IO;
 
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
     class GradingStudents
     {
@@ -37,13 +37,13 @@ namespace AllChallenges
             foreach (int grade in grades)
             {
                 int quation = grade % 5;
-                int nextExpectedGrade = (grade - quation) + 5;
-                int finalGrade = (nextExpectedGrade - grade < 3) ? nextExpectedGrade : grade;
-                result.Add((finalGrade >= 40) ? finalGrade : grade);
+                int nextExpectedGrade = grade - quation + 5;
+                int finalGrade = nextExpectedGrade - grade < 3 ? nextExpectedGrade : grade;
+                result.Add(finalGrade >= 40 ? finalGrade : grade);
 
                 Console.WriteLine($"{grade} - {quation} - {nextExpectedGrade}");
             }
-            Console.WriteLine(String.Join("\n", result));
+            Console.WriteLine(string.Join("\n", result));
             return result;
         }
     }

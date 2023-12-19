@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
     class PlusMinus
     {
@@ -23,12 +23,12 @@ namespace AllChallenges
 
             Console.WriteLine(Calculate(arr.Count(x => x > 0), length));
             Console.WriteLine(Calculate(arr.Count(x => x < 0), length));
-            Console.WriteLine( Calculate(arr.Count(x => x == 0), length));
+            Console.WriteLine(Calculate(arr.Count(x => x == 0), length));
         }
 
         static decimal Calculate(int count, int length)
         {
-            decimal result = (count > 0 && length > 0) ? ((decimal)count / length) : 0;
+            decimal result = count > 0 && length > 0 ? (decimal)count / length : 0;
             return result;
         }
     }

@@ -17,7 +17,7 @@ Output
 
 true
      */
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
     public class ArraySumToK
     {
@@ -52,7 +52,7 @@ namespace AllChallenges
             {
                 for (int j = 0; j < str.Length; j++)
                 {
-                    if (i != j && (str[i] + str[j]) == k)
+                    if (i != j && str[i] + str[j] == k)
                     {
                         result = true;
                         break;

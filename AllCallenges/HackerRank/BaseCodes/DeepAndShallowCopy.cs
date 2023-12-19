@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AllCallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
-   public class DeepAndShallowCopy
+    public class DeepAndShallowCopy
     {
         public static void Entry()
         {
@@ -12,7 +12,7 @@ namespace AllCallenges
                                   "Sandeep Jain");
 
             // Performing Shallow copy                       
-            Company c2 = (Company)c1.DeepCopy();
+            Company c2 = c1.DeepCopy();
 
             Console.WriteLine("Before Changing: ");
 
@@ -48,20 +48,20 @@ namespace AllCallenges
         public Company(int gbRank, string c,
                                    string o)
         {
-            this.GBRank = gbRank;
+            GBRank = gbRank;
             desc = new CompanyDescription(c, o);
         }
 
         // method for cloning object 
         public object Shallowcopy()
         {
-            return this.MemberwiseClone();
+            return MemberwiseClone();
         }
 
         // method for cloning object 
         public Company DeepCopy()
         {
-            Company deepcopyCompany = new Company(this.GBRank,
+            Company deepcopyCompany = new Company(GBRank,
                                 desc.CompanyName, desc.Owner);
             return deepcopyCompany;
         }
@@ -75,8 +75,8 @@ namespace AllCallenges
         public string Owner;
         public CompanyDescription(string c, string o)
         {
-            this.CompanyName = c;
-            this.Owner = o;
+            CompanyName = c;
+            Owner = o;
         }
     }
 }

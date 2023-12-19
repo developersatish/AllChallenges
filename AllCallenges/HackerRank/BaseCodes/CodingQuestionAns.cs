@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
 
     public class CodingQuestionAns
@@ -380,7 +380,7 @@ namespace AllChallenges
              * 
              */
 
-            double hourDegrees = (hours * 30) + (mins * 30.0 / 60);
+            double hourDegrees = hours * 30 + mins * 30.0 / 60;
             double minuteDegrees = mins * 6;
 
             double diff = Math.Abs(hourDegrees - minuteDegrees);

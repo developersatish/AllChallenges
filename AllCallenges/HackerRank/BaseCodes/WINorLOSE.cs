@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
     class WINorLOSE
     {

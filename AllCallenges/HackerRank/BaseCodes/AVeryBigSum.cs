@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
     public class AVeryBigSum
     {
@@ -16,7 +16,7 @@ namespace AllChallenges
 
         public static void Entry()
         {
-            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+            TextWriter textWriter = new StreamWriter(Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
             int arCount = Convert.ToInt32(Console.ReadLine());
 

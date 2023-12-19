@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
     class DiagonalDifference
     {
@@ -20,19 +20,19 @@ namespace AllChallenges
                     {
                         A = A + arr[i][j];
                     }
-                   
+
                 }
 
-                int lastIndex = arr[1].Length - (i+1);
+                int lastIndex = arr[1].Length - (i + 1);
                 B += arr[i][lastIndex];
             }
 
-            return Math.Abs(A-B);
+            return Math.Abs(A - B);
         }
 
-       public static void Entry()
+        public static void Entry()
         {
-          //  TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+            //  TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
             Console.WriteLine("Enter Arr size");
             int n = Convert.ToInt32(Console.ReadLine());
 
@@ -47,7 +47,7 @@ namespace AllChallenges
 
             Console.WriteLine($"Result {result}");
 
-           
+
         }
 
         public static void FindDublicates()
@@ -56,7 +56,7 @@ namespace AllChallenges
             Console.WriteLine("Enter Arr size");
             int n = Convert.ToInt32(Console.ReadLine());
 
-            
+
 
             var line = Console.ReadLine();
             string[] tokens = line.Split(' ');
@@ -74,7 +74,7 @@ namespace AllChallenges
                 else
                     dict[value] = 1;
             }
-            
+
 
             foreach (var pair in dict)
                 Console.WriteLine("Value {0} occurred {1} times.", pair.Key, pair.Value);
@@ -101,15 +101,15 @@ namespace AllChallenges
             array = Array.ConvertAll(tokens, arrTemp => Convert.ToInt32(arrTemp));
 
 
-            List<int> dict = new List<int> ();
+            List<int> dict = new List<int>();
 
             foreach (var value in array)
             {
                 if (!dict.Contains(value))
                 {
                     dict.Add(value);
-                }                   
-                
+                }
+
             }
 
             List<int> result = new List<int>();
@@ -124,8 +124,8 @@ namespace AllChallenges
 
             result.Sort();
 
-           
-            Console.WriteLine($"Result {string.Join(" ",result.ToArray())}");
+
+            Console.WriteLine($"Result {string.Join(" ", result.ToArray())}");
 
             Console.ReadLine();
 

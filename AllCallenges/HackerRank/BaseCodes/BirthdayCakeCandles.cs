@@ -4,7 +4,7 @@ using System.Text;
 using System.Linq;
 using System.IO;
 
-namespace AllChallenges
+namespace AllChallenges.HackerRank.BaseCodes
 {
     class BirthdayCakeCandles
     {
@@ -37,7 +37,7 @@ namespace AllChallenges
             {
                 if (ar[i] == longest)
                 {
-                    
+
                     count++;
                     Console.WriteLine($"${longest} ${ar[i]} ${count}");
                 }
